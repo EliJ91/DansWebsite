@@ -1,20 +1,75 @@
-body{
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+
+
+
+body {
     margin: 0em;
+    margin-left: 7rem;
     padding: 0;
     font-family: 'Montserrat', serif;
+    background-image: url(https://esossl-a.akamaihd.net/uploads/website/xTRnJovUiWsLxovJbRMx/new-bg-12.png);
+    background-size: auto;
     
 }
 
-.container {
+.navi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(48, 48, 48);
+    font-size: 20px;    
+    justify-content: space-evenly;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-top: 8px;    
+    color: gold;
+    top: 0;
+    width: 7rem;
+    padding-right: 10px;
+    border-right: 5px solid purple;
+    background-image: url(https://esossl-a.akamaihd.net/uploads/website/xTRnJovUiWsLxovJbRMx/new-bg-12.png);
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.navi p{
     display: flex;
-    justify-content: space-between;
-    background: black;
-    padding: 0%;
-    margin: 0;
+    height: 40px;
+
+    
+}
+.navi p img{
+    width: 40px;
+    margin-left: 2rem;
+
+}
+.navi p a{
+    padding-top: .5rem;     
+    white-space: nowrap;
+    padding-left: 1rem;
+    overflow: hidden;
+    display: none;
+    color: gold;    
+    text-shadow: 2px 1px black ;
+    font-weight: 700;
+    text-decoration: none;
+    display: none;
     
 }
 
-h1{
+
+.logo{
+    
+    width: 100px;    
+    top: 0em;
+}
+
+
+
+.notesTitle{
     width: 100%;
     background: black;
     color: purple;
@@ -22,61 +77,107 @@ h1{
     margin: 0;
     padding-bottom: 5px;
     font-weight: 700;
-}
-
-.web{
-    border: 5px solid grey;
-    margin-bottom: 20px;
-    padding: 0px;
-    margin-top: 10px;
-    
     
 }
-
-nav{
-    position: sticky;
-    top: 0;
-    background-color: rgb(48, 48, 48);
-    font-size: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    height: 5vh;
-    margin-bottom: 0px;
-    padding-top: 8px;
-    border: 1px solid gold;
-    color: gold;
-    
-    
-}
-
-nav a{
-    color: gold;    
-    text-shadow: 2px 1px black ;
-    font-weight: 700;
-    text-decoration: none;
-   
-    
-}
-
-
 #textArea{
     background-color: rgb(59, 59, 59);
-    color: white;
-    box-sizing: border-box;
+    color: white;    
     width: 100%;
     height: 500px;       
     border: 5px solid gold;
     font-size: 20px;
-    font-family: 'Montserrat', serif;
+    box-sizing: border-box;
 }
 
-.textArea{
-    text-align: center;
+
+.title{
+
     width: 100%;
+    color: purple;
+    text-align: center;
+    background-color: black;
+    height: 6rem;
+    margin: 0;
+    font-weight: 700;
+    position: sticky;
+    top: 0em;
+    padding-top: 1.5rem;
+    border-bottom:  5px solid goldenrod;
+    background-image: url(https://esossl-a.akamaihd.net/uploads/website/xTRnJovUiWsLxovJbRMx/new-bg-12.png);
+    background-size: auto;
+    background-attachment: fixed;
+    
+    
+    
 }
+
 
 a:hover{
     color: purple;
     
 
 }
+
+/* .mainContainer{
+    display: flex;
+    margin-left: 4rem;
+    padding: 0;
+    justify-content: space-between;
+    border:5px solid orange; 
+}*/
+
+.childContainer{
+    padding: 0;
+    width: 100%;
+}
+
+.webContainer {
+    display: flex;
+    justify-content: space-evenly;    
+    padding: 0;
+    margin: 0;  
+}
+.web{
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 20px;
+    width: 50rem;
+}
+
+
+
+.navi:hover{
+    border-right: 5px solid purple;
+}
+
+
+#page1{
+   display: block; 
+}
+#page2, #page3, #page4{
+    display: none;
+}
+
+
+.tabs{
+    display: flex;
+    justify-content: space-evenly;    
+    margin: 0;
+    padding: 0;
+    position: sticky;
+}
+
+.tab{
+    width: 100%;
+    color: goldenrod;
+    background-color: purple;
+    border: 1px solid goldenrod;
+}
+.tamriel{
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 0px;
+    width: 50rem;
+    
+}
+
